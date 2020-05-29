@@ -1,0 +1,26 @@
+pipeline {
+    agent any
+    
+    stages {
+        stage('checkout') {
+            steps {
+                echo 'Checkout done'
+            }
+            
+        }
+        
+        stage('install deps') {
+            steps {
+                echo 'Deps installed'
+            }
+            
+        }
+        
+        stage('unit') {
+            steps{
+                echo 'Unit done'
+            }
+            
+        }
+    }
+}
